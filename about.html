@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AboutUs</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+  <style>
+    /* REQUIRED START ======================  */
+    * 
+	{margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Segoe UI;}
+	 
+
+    .white 
+	{color: white;}
+
+    .bold 
+	{font-weight: 500;}
+
+
+
+    /* Custom CSS */
+    .navbar 
+	{position: fixed !important;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 999;
+     background-color: #294394;
+     height: 100px;
+     transition: background-color 0.3s ease;}
+
+    .navbar .navbar-brand 
+	{display: flex;
+     align-items: center;}
+
+    .navbar .navbar-brand img 
+	{margin-right: 5px;}
+
+    .navbar-toggler 
+	{border: none;
+     padding: 0.25rem 0.5rem;
+     font-size: 1.5rem;
+     background-color: #fff;}
+
+    .navbar-nav .nav-link 
+	{padding: 0.5rem 0.9rem !important;
+     font-size: 16px;}
+
+    .navbar-nav .nav-item 
+	{margin-left: 10px;}
+	
+
+    @media (max-width: 992px) 
+	{.navbar.navbar-expand-lg .navbar-collapse.collapse.show .navbar-nav 
+	 {background-color: royalblue;}
+	 }
+
+    /* REQUIRED END ======================  */
+	
+	
+
+    /*-----Sections-----*/
+    body 
+	{background-color: #f8f9fa;}
+	
+	
+
+    /*-----Fourth Section-----*/
+    .container1 
+	{background-color: #15317E;
+     width: 100% !important;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     padding-right: 100px;
+     padding-left: 100px;
+     margin-right: auto;
+     margin-left: auto;}
+	 
+
+    @media (max-width: 763px) 
+	{
+      .container1 
+	  {padding-right: 0;
+       padding-left: 0;}
+    }
+
+
+    .image-container 
+	{position: relative;
+     overflow: hidden;}
+
+    .image-container img 
+	{width: 100%;
+     height: auto;
+     transition: transform 0.3s;
+     max-height: 250px;
+     min-height: 250px;}
+
+    .image-container .content 
+	{position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     opacity: 1;
+     transition: opacity 0.3s, transform 0.3s;
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     width: 200px;
+     padding: 20px;}
+
+    .image-container:hover img 
+	{transform: scale(1.1); }
+
+    .image-container:hover .content 
+	{opacity: 0;
+     transform: translate(-50%, -150%);}
+	 
+
+    .btn-circle 
+	{width: 70px;
+     height: 70px;
+     margin-left: 30px;
+     padding: 6px 0px;
+     border-radius: 60px;
+     text-align: center;
+     font-size: 12px;
+     line-height: 1.42857;
+     font-weight: bold;
+     color: darkblue;
+     background-color: white;
+     border-color: transparent;}
+	
+	
+	
+	/*-----Footer-----*/
+    footer 
+	{width: 100%;
+     bottom: 0;
+     background: linear-gradient(to right, #294394, #00093c);
+     color: #fff;
+     padding: 100px 0 30px;
+     border-top-left-radius: 250px;
+     font-size: 13px;
+     margin-top: 120px;}
+
+
+    .row2 
+	{width: 85%;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-between;}
+
+
+    .col2 
+	{flex-basis: 25%;
+     padding: 10px;}
+
+    .col2:nth-child(2),
+	.col2:nth-child(3) 
+	{flex-basis: 15%;}
+	
+	.col2 h3 
+	{width: fit-content;
+     margin-bottom: 40px;
+     position: relative;}
+	 
+	.col2 ul li 
+	{list-style: none;
+      margin-bottom: 12px;}
+
+    .col2 ul li a 
+	{text-decoration: none;
+     color: #fff;}
+
+
+    .logo2 
+	{width: 130px;
+     margin-bottom: 20px;}
+    
+
+    .email-id 
+	{width: fit-content;
+     border-bottom: 1px solid #ccc;
+     margin: 20px 0; }
+
+
+    .social-icons .fab 
+	{width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 40px;
+     font-size: 20px;
+     color: #000;
+     background: #fff;
+     margin-right: 15px;
+     cursor: pointer;}
+
+
+    .copyright 
+	{text-align: center;}
+
+
+    .underline 
+	{width: 100%;
+     height: 5px;
+     background: #767676;
+     border-radius: 3px;
+     position: absolute;
+     top: 25px;
+     left: 0;
+     overflow: hidden;}
+
+    .underline span 
+	{width: 15px;
+     height: 100%;
+     background: #fff;
+     border-radius: 3px;
+     position: absolute;
+     top: 0;
+     left: 10px;
+     animation: moving 2s linear infinite;}
+
+
+    @keyframes moving {
+      0% {
+        left: -20px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+
+
+    @media (max-width: 700px) 
+	{
+      footer 
+	  {bottom: unset;}
+
+      .col2 
+	  {flex-basis: 100%; }
+
+      .col2:nth-child(2),
+      .col2:nth-child(3) 
+	  {flex-basis: 100%;}
+    }
+	
+	
+	
+    /*-----Whatsapp-----*/
+	.whatsapp-icon 
+	{position: fixed;
+     bottom: 10px;
+     right: 0;
+     z-index: 9999;}
+
+    .whatsapp-icon img 
+	{width : 120px;
+	 height: 120px;}
+
+    @media (min-width: 700px) 
+	{
+      .whatsapp-icon img 
+	  {height: 120px;}
+    }
+  </style>
+</head>
+
+<body>
+  <!----------WhatsApp---------->
+  <div class="whatsapp-icon">
+     <a href="https://wa.me/+60102462208" target="_blank">
+        <img class="" src="ws.png" alt="WhatsApp Icon">
+     </a>
+  </div>
+  <!----------END---------->
+   
+   
+   
+  <!----------Navbar---------->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand animate__animated animate__backInLeft" href="index.html">
+        <img src="logo.png" alt="Logo" width="65">
+        <span class="white bold">K3<br>SYSTEMS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars" style="padding-top:5px;" aria-hidden="true"></i> </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item animate__animated animate__backInDown">
+            <a class="nav-link white bold no-hover" href="index.html"><b>Home</b></a>
+          </li>
+          <li class="nav-item animate__animated animate__backInDown">
+            <a class="nav-link white bold" href="product.html">Product</a>
+          </li>
+          <li class="nav-item animate__animated animate__backInDown">
+            <a class="nav-link white bold" href="services.html">Services</a>
+          </li>
+          <li class="nav-item animate__animated animate__backInDown">
+            <a class="nav-link white bold" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item animate__animated animate__backInDown">
+            <a class="nav-link white bold" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!----------END---------->
+
+
+
+  <!----------First Section: About Us---------->
+  <div style="padding-top: 130px;padding-bottom:50px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="animate__animated animate__fadeInLeft" style="color:#15317E;font-weight:bold;">About Us</h1>
+          <img class="animate__animated animate__fadeInLeft img-fluid" src="pos.png" alt="Image 1">
+          <p class="animate__animated animate__fadeIn" style="font-size:20px;">International product from Taiwan
+            (KSI Co., Ltd) specialized in Retail Management software development & solution.</p>
+          <p class="animate__animated animate__fadeIn" style="font-size:20px;">K3 Systems is currently supporting
+            more than 1,000 supermarket
+            outlets in Taiwan and more than 700 merchants outlets in Malaysia.</p>
+          <p class="animate__animated animate__fadeIn" style="font-size:20px;">K3 Systems has over 10 years of
+            experience in ERP & POS Systems
+            business in Malaysia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------END---------->
+  
+  
+  
+  <!----------Second Section: Why Choose Us---------->
+  <div class="container1 text-center">
+    <h1 class="animate__animated animate__fadeInLeft" style="color:#fff;font-weight:bold;">WHY CHOOSE US?</h1>
+    <div class="row pb-5 pt-5" style="margin-left:auto;margin-right:auto;">
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="ones.jpg" alt="Image 1">
+          <div class="content">
+            <h4><b>Experiences</b></h4>
+            <p style="font-size:15px;">Experienced in retail ERP System</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="twos.jpg" alt="Image 2">
+          <div class="content">
+            <h4><b>Complete</b></h4>
+            <p style="font-size:15px;">The most complete ERP Systems - Integrated with payment gateway & digital
+              products</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="three.jpg" alt="Image 3">
+          <div class="content">
+            <h4><b>Openness</b></h4>
+            <p style="font-size:15px;">System Openness - Ability to connect to 3rd party systems</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="four.jpg" alt="Image 3">
+          <div class="content">
+            <h4><b>Professional</b></h4>
+            <p style="font-size:15px;">Professional research & development to keep up with the market trend and
+              directions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------END---------->
+
+ 
+
+  <!----------Third Section: History---------->
+  <div class="container"
+    style="padding-top:150px;padding-bottom:150px;background-image:url('bg1.png');height:100%;background-size:cover">
+    <div class="row">
+      <div class="col-12">
+        <div id="big-box" class="card text-center">
+          <div class="card-body" style="background-color:#294394">
+            <h5 class="card-title"></h5>
+            <p class="card-text" style="color:white;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4 text-center">
+        <div id="circle-buttons" class="btn-group" role="group" aria-label="Circle Buttons">
+          <button type="button" class="btn-circle active"
+            data-description="<p>• Partnership with KK Super Mart and 24 new KK Super Mart Outlets have successfully integrated<br>• Successful partnership to launch Malaysia’s GST<br>• Collaboration with Sanda and the offer of technical services</p><br><br>2 0 1 5">2
+            0 1 5 </button>
+          <button type="button" class="btn-circle" data-description="<p>• Partnership with Polo Formosa and provide the technical services<br>•
+            Collaboration with Chun Ciou Hot Pot and delivery of technical support<br>• Collaboration
+            and effective integrated with 88c Bakery Café Sdn Bhd (Donutes)<br>• Successful support
+            first digital product in K3 Systems<br>• 39 new KK Super Mart Outlets have successfully
+            integrated</p><br><br>2 0 1 6">2 0 1 6 </button>
+          <button type="button" class="btn-circle" data-description="<p>• Partnership with Team DIY Hardware Sdn Bhd (Team 7) and effective integration of 1 new
+            Team 7 Outlets<br>• Collaboration with KOI Thé and provision of technological
+            services<br>• Successful support first e-Wallet in K3 Systems – Alipay<br>• 51 new
+            KK Super Mart Outlets have successfully integrated</p><br><br>2 0 1 7">2 0 1 7 </button>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div id="circle-buttons" class="btn-group" role="group" aria-label="Circle Buttons">
+          <button type="button" class="btn-circle" data-description="<p>• Partnership with Happy Momentum and providing a combination of digital payment &amp; digital
+            product solutions in K3 ERP system<br>• Collaboration and effective integrated with 88c
+            Bakery Café Sdn Bhd (Baiwago)<br>• 63 new KK Super Mart Outlets have successfully
+            integrated<br>• Effective integration of 18 new Team 7 Outlets</p><br><br>2 0 1 8">2 0 1 8 </button>
+          <button type="button" class="btn-circle" data-description="<p>• 61 new KK Super Mart Outlets have successfully integrated<br>• Effective
+            integration of 3 new Team 7 Outlets</p><br><br>2 0 1 9">2 0 1 9 </button>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div id="circle-buttons" class="btn-group" role="group" aria-label="Circle Buttons">
+          <button type="button" class="btn-circle" data-description="<p>• Collaboration and effective integrated with 88c Bakery Café Sdn Bhd (B Café)<br>•
+            76 new KK Super Mart Outlets have successfully integrated</p><br><br>2 0 2 0">2 0 2 0 </button>
+          <button type="button" class="btn-circle" data-description="<p>• 63 new KK Super Mart Outlets have successfully integrated<br>• Effective
+            integration of 2 new Team 7 Outlets</p><br><br>2 0 2 1">2 0 2 1 </button>
+          <button type="button" class="btn-circle" data-description="<p>• 63 new KK Super Mart Outlets have successfully integrated<br>• Effective
+            integration of 2 new Team 7 Outlets</p><br><br>2 0 2 2">2 0 2 2 </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------END---------->
+
+
+
+  <!----------Footer---------->
+  <footer>
+    <div class="row2">
+      <div class="col2">
+        <img src="logo.png" class="logo2">
+      </div>
+      <div class="col2">
+        <h3 style="font-size:13px;">Office <div class="underline"><span></span></div>
+        </h3>
+        <p style="font-size:13px;">Menara KK, T6-01-03,</p>
+        <p style="font-size:13px;">Tower 6, Maju Link,</p>
+        <p style="font-size:13px;">Jln Lingkaran Tengah 2,</p>
+        <p style="font-size:13px;">Bandar Tasik Selatan,</p>
+        <p style="font-size:13px;">57000 Kuala Lumpur</p>
+        <p style="font-size:13px;" class="email-id">enquiry@k3systems.com.my</p>
+        <h4 style="font-size:13px;">+603 9547 5266</h4>
+      </div>
+      <div class="col2">
+        <h3 style="font-size:13px;">Links <div class="underline"><span></span></div>
+        </h3>
+        <ul>
+          <li><a style="font-size:13px;" href="index.html">Home</a></li>
+          <li><a style="font-size:13px;" href="product.html">Products</a></li>
+          <li><a style="font-size:13px;" href="services.html">Services</a></li>
+          <li><a style="font-size:13px;" href="about.html">About Us</a></li>
+          <li><a style="font-size:13px;" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <h3 style="font-size:13px;">Contact Us <div class="underline"><span></span></div>
+        </h3>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"><a href="https://www.facebook.com/happymomentum"></a></i>
+          <i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/company/happymomentum/"></a></i>
+        </div>
+      </div>
+    </div>
+    <hr style="width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+    ">
+    <p class="copyright">© K3 SYSTEMS SDN BHD 2023</p>
+  </footer>
+  <!----------END---------->
+
+
+
+  <!----------JavaScript--------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.0/wow.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    //also at the window load event
+    $(window).on('load', function () {
+      new WOW().init();
+    });
+
+    $(document).ready(function () {
+      $(function () {
+        new WOW().init();
+      });
+
+      // Set the default description and active state for the first button
+      var defaultDescription = "<p>• Partnership with KK Super Mart and 24 new KK Super Mart Outlets have successfully integrated<br>• Successful partnership to launch Malaysia’s GST<br>• Collaboration with Sanda and the offer of technical services</p><br><br>2 0 1 5";
+      var firstButton = $("#circle-buttons button:first-child");
+      firstButton.addClass("active");
+      $("#big-box .card-text").html(defaultDescription);
+
+      // Handle button click event
+      $("#circle-buttons button").click(function () {
+        // Remove active state from all buttons
+        $("#circle-buttons button").removeClass("active");
+        // Add active state to the clicked button
+        $(this).addClass("active");
+        // Update the description in the big box
+        var description = $(this).data("description");
+        $("#big-box .card-text").html(description);
+      });
+    });
+  </script>
+  <!----------END---------->
+  
+  
+</body>
+</html>
